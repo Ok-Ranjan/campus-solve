@@ -1,0 +1,22 @@
+<h2>Add Learning material</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    Title:
+    <input type="text" name="title"><br><br>
+
+    Subject:
+    <input type="text" name="subject"><br><br>
+
+    Topic:
+    <input type="text" name="topic"><br><br>
+
+    Notes:
+    <textarea name="notes"></textarea><br><br>
+
+    Youtube /Articles Link:
+    <input type="text" name="link"><br><br>
+
+    <button type="submit">Save</button>
+</form>
